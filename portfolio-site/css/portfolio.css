@@ -1,0 +1,42 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #2d3c49;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-title {
+  color: #d8d6d7;
+  width: 100%;
+}
+
+.project {
+  width: 30%;
+  display: block;
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.header hr {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #7d97ad;
+}
+
+.project-title {
+  text-transform: uppercase;
+  color:
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.short-info {
+  text-transform: uppercase
+}
