@@ -4,21 +4,31 @@ body {
   color: #2d3c49;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.projects-title {
-  color: #d8d6d7;
+h2 {
+  color: #7d97ad;
+  text-transform: uppercase;
+  font-weight: 400;
   width: 100%;
 }
 
-.project {
-  width: 30%;
-  display: block;
-  text-decoration: none;
-  color: #2d3c49;
+.udacity-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-image: url(../img/udacity-logo.png);
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.short-info {
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .header hr {
@@ -27,16 +37,47 @@ body {
   border-color: #7d97ad;
 }
 
+.main-image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 30%;
+  display: block;
+  text-decoration: none;
+  color: #2d3c49;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 412px) {
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 768px) {
+  .project {
+    width: 48%;
+  }
+}
+
+.project-image {
+  width: 100%;
+}
+
 .project-title {
   text-transform: uppercase;
-  color:
+  color: #2d3c49;
+  text-align: center;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.short-info {
-  text-transform: uppercase
+.project-link {
+  text-align: center;
 }
