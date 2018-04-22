@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nataliya Glazyrina portfolio</title>
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+  <title>Nataliya Glazyrina's portfolio</title>
+  <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,400">
 </head>
 <body>
   <div class="header">
     <div class="udacity-logo"></div>
-    <!-- <img class="udacity-logo" src="img/udacity-logo.png" alt="udacity logo"> -->
     <div class="short-info">
       <h1>Nataliya Glazyrina</h1>
-      <p>DevOps engineer trying to make some frontend =)</p>
+      <div>DevOps engineer trying to make some frontend =)</div>
     </div>
-    <hr >
   </div>
-  <img class="main-image" src="img/main-image.jpg" alt="main-image">
+  <img class="main-image"
+       srcset="img/main-image-420.jpg 420w,
+               img/main-image-770.jpg 770w,
+               img/main-image-840.jpg 840w,
+               img/main-image-1200.jpg 1200w,
+               img/main-image-1540.jpg 1540w,
+               img/main-image-2400.jpg 2400w"
+        sizes="100vw"
+        src="img/main-image-1200.jpg"
+        alt="main-image">
   <div class="projects">
     <h2>Featured Work</h2>
     <a class="project" href="https://github.com/stevep307/udacity-scholarship/tree/master/mockup-to-article">
-      <img class="project-image" src="img/article.jpg" alt="article">
+      <img class="project-image"
+           srcset="img/article-420.jpg,
+                   img/article-840.jpg 2x"
+           src="img/article-420.jpg"
+           alt="article">
       <div class="project-title">Mockup to article</div>
       <div class="project-link">https://github.com/stevep307/mockup-to-article</div>
     </a>
     <a class="project" href="https://github.com/stevep307/udacity-scholarship/tree/master/animal-trading-card">
-      <img class="project-image" src="img/animal.jpg" alt="animal">
+      <img class="project-image"
+           srcset="img/animal-420.jpg,
+                   img/animal-840.jpg 2x"
+           src="img/animal-420.jpg"
+           alt="animal">
       <div class="project-title">Animal trading card</div>
       <div class="project-link">https://github.com/stevep307/animal-trading-card</div>
     </a>
     <a class="project" href="https://github.com/stevep307/udacity-scholarship/tree/master/portfolio-site">
-      <img class="project-image" src="img/portfolio.jpg" alt="portfolio">
+      <img class="project-image"
+           srcset="img/portfolio-420.jpg,
+                   img/portfolio-840.jpg 2x"
+           src="img/portfolio-420.jpg"
+           alt="portfolio">
       <div class="project-title">Porfolio site</div>
       <div class="project-link">https://github.com/stevep307/portfolio-site</div>
     </a>

@@ -1,40 +1,41 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #2d3c49;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0 0 10px;
 }
 
 h2 {
-  color: #7d97ad;
+  color: #4c5a65;
   text-transform: uppercase;
   font-weight: 400;
   width: 100%;
+}
+
+.header {
+  border-bottom: 4px solid #7d97ad;
 }
 
 .udacity-logo {
   width: 100px;
   height: 100px;
   position: absolute;
-  background-image: url(../img/udacity-logo.png);
-  background-position: center;
+  background: url(../img/udacity-logo.png) center no-repeat;
   background-size: auto 100%;
-  background-repeat: no-repeat;
 }
 
 .short-info {
   text-align: right;
   text-transform: uppercase;
-}
-
-.header hr {
-  border-width: 2px;
-  border-style: solid;
-  border-color: #7d97ad;
+  padding: 10px 0 14px 100px;
 }
 
 .main-image {
@@ -76,8 +77,10 @@ h2 {
   text-transform: uppercase;
   color: #2d3c49;
   text-align: center;
+  font-size: 20px;
 }
 
 .project-link {
   text-align: center;
+  word-break: break-word;
 }
