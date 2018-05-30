@@ -29,7 +29,7 @@ body {
 }
 
 .container.winning {
-  display: none;
+    display: none;
 }
 
 h1 {
@@ -55,6 +55,16 @@ h1 {
     margin: 0 0 3em;
 }
 
+@media screen and (max-width: 680px) {
+    .deck {
+        width: 100vw;
+        min-height: auto;
+        height: 100vw;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
 .deck .card {
     height: 125px;
     width: 125px;
@@ -73,6 +83,14 @@ h1 {
         transform .2s ease-out;
 }
 
+@media screen and (max-width: 680px) {
+    .deck .card {
+        height: 20vw;
+        width: 20vw;
+        margin: 2.5vw;
+    }
+}
+
 .deck .card.open {
     transform: rotateY(0);
     background: #02b3e4;
@@ -81,7 +99,6 @@ h1 {
 
 .deck .card.show {
     font-size: 33px;
-
 }
 
 .deck .card.match {
@@ -96,6 +113,14 @@ h1 {
     background: #eb5a3c;
     font-size: 33px;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+}
+
+@media screen and (max-width: 680px) {
+    .deck .card.show,
+    .deck .card.match,
+    .deck .card.error  {
+        font-size: 27px;
+    }
 }
 
 @keyframes shake {
@@ -123,6 +148,18 @@ h1 {
     text-align: left;
     width: 345px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 680px) {
+    .score-panel {
+        width: 100vw;
+        padding: 10px;
+    }
+}
+.action-count {
+    width: 50vw;
 }
 
 .score-panel .stars {
@@ -143,11 +180,14 @@ h1 {
 }
 
 .score-panel .timer {
+    width: 25vw;
+    text-align: center;
 }
 
 .score-panel .restart {
-    float: right;
     cursor: pointer;
+    width: 25vw;
+    text-align: right;
 }
 
 .final-score {

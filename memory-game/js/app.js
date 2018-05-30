@@ -104,9 +104,9 @@ function shuffle(array) {
 
 function onCardClick(card) {
     if (!startTime) {
-      // Initialization of the timer
-       startTime = new Date();
-       timerId = setInterval(timer, 1000);
+        // Initialization of the timer
+        startTime = new Date();
+        imerId = setInterval(timer, 1000);
     }
 
     const isMatched = card.classList.contains('match');
