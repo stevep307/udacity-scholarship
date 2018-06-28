@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+.winning-message {
+  display: none;
+}
+
+.winning-message.show {
+  display: block;
+}
